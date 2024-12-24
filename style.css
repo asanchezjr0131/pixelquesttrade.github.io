@@ -1,6 +1,6 @@
-/* General Styles */
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,12 +8,13 @@ body {
     color: #333;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background-color: #0073e6;
+    background: #0073e6; /* Vibrant blue for community engagement theme */
     color: white;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -21,46 +22,77 @@ header h1 {
     font-size: 2.5rem;
 }
 
+header p {
+    margin: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
 nav {
     margin-top: 1rem;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5; /* Darker blue for hover effect */
 }
 
 /* Main Content */
 main {
     padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
 }
 
 main h2 {
     color: #0073e6;
-    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 main p {
     font-size: 1.2rem;
     margin: 1rem 0;
+    color: #555;
 }
 
-/* Footer */
+/* Section Styling */
+section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative; /* No fixed footer */
     font-size: 0.9rem;
 }
 
