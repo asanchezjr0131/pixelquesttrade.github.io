@@ -114,3 +114,60 @@ button:hover, a.button:hover {
     background-color: #FFD700; /* Bright yellow */
     color: #2D004D; /* Deep purple text */
 }
+/* Membership Grid Layout */
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Membership Cards */
+.membership-card {
+    background: #1E1E2C;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Membership Title */
+.membership-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Highlighted gold for titles */
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.5rem;
+    color: #00FFFF; /* Neon cyan */
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Benefit List */
+.membership-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-card ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #FFF4E0; /* Soft white */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+}
