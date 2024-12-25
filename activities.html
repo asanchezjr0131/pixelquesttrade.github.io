@@ -14,17 +14,17 @@
         <p>Discover, Connect, and Engage with PixelQuest Trade</p>
     </header>
 
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
-            <a href="membership.html">Membership</a>
-            <ul class="dropdown">
-                <li><a href="trailblazer.html">Trailblazers</a></li>
-            </ul>
-        </li>
+                <a href="membership.html">Membership</a>
+                <ul class="dropdown">
+                    <li><a href="trailblazer.html">Trailblazers</a></li>
+                </ul>
+            </li>
             <li><a href="activities.html">Activities</a></li>
         </ul>
     </nav>
@@ -37,19 +37,22 @@
                 Tune into our live streams on Twitch to connect with our community, enjoy exclusive content,
                 and participate in interactive events.
             </p>
-           <!-- Twitch Embed -->
-<div class="twitch-embed">
- <iframe 
-    src="https://player.twitch.tv/?channel=pixelquesttrade&parent=pixelquesttrade.github.io" 
-    frameborder="0" 
-    allowfullscreen="true" 
-    scrolling="no" 
-    height="378" 
-    width="620">
-</iframe>
+            
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed" style="height: 480px; width: 100%;"></div>
 
-</div>
+            <!-- Load the Twitch embed script -->
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
+            <!-- Create a Twitch.Player object -->
+            <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                    channel: "pixelquesttrade",
+                    width: "100%",
+                    height: "480",
+                    parent: ["pixelquesttrade.github.io", "www.pixelquesttrade.org"]
+                });
+            </script>
         </section>
 
         <section>
