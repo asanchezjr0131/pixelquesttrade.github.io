@@ -63,9 +63,15 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved.</p>
-    </footer>
+    <script>
+    // Dynamically load the footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.body.insertAdjacentHTML('beforeend', html);
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
 </body>
 </html>
