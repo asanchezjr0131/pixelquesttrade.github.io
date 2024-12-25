@@ -1,20 +1,19 @@
 /* General Page Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: green; /* Green background */
+    color: #d900ff; /* Neon purple text color */
 }
 
 /* Header Styling */
 header {
-    background: #0073e6; /* Vibrant blue for community engagement theme */
-    color: green;
+    background: #0073e6; /* Blue header for contrast */
+    color: white;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -28,10 +27,7 @@ header p {
     font-style: italic;
 }
 
-nav {
-    margin-top: 1rem;
-}
-
+/* Navigation Links */
 nav ul {
     list-style: none;
     padding: 0;
@@ -45,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #d900ff; /* Neon purple for links */
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -55,7 +51,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #005bb5; /* Darker blue for hover effect */
+    background-color: #005bb5; /* Darker blue on hover */
+    color: white;
 }
 
 /* Main Content */
@@ -67,14 +64,14 @@ main {
 }
 
 main h2 {
-    color: #0073e6;
+    color: #d900ff; /* Neon purple headings */
     margin-bottom: 1rem;
 }
 
 main p {
     font-size: 1.2rem;
     margin: 1rem 0;
-    color: #555;
+    color: #f4f4f9; /* Light color for readability on green */
 }
 
 /* Section Styling */
@@ -92,7 +89,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: relative; /* No fixed footer */
+    position: relative;
     font-size: 0.9rem;
 }
 
