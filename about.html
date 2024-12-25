@@ -94,7 +94,24 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved.</p>
+        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
+        
+        <!-- PayPal Donate Button -->
+        <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
+            <div id="donate-button"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production', // 'sandbox' for testing, 'production' for live
+                    hosted_button_id: 'GVWQJP6GJ5NXN',
+                    image: {
+                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                        alt: 'Donate with PayPal button',
+                        title: 'Donate with PayPal',
+                    }
+                }).render('#donate-button');
+            </script>
+        </div>
     </footer>
 </body>
 </html>
