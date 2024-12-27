@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelQuest Trade - Home</title>
+
+    <!-- Open Graph Metadata -->
     <meta property="og:title" content="PixelQuest Trade - Home">
     <meta property="og:description" content="Welcome to PixelQuest Trade. Join our 501(c)(7) club to engage with the community through creative events and digital inclusion.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pixelquesttrade.club">
+    <meta property="og:url" content="https://www.pixelquesttrade.club">
     <meta property="og:image" content="img/logo.png">
 
     <!-- SEO Metadata -->
     <meta name="description" content="Welcome to PixelQuest Trade. Join our 501(c)(7) club to engage with the community through creative events and digital inclusion.">
     <meta name="keywords" content="PixelQuest Trade, community engagement, digital inclusion, club events, 501(c)(7)">
+
+    <!-- Structured Data for Logo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PixelQuest Trade",
+      "url": "https://www.pixelquesttrade.club",
+      "logo": "https://www.pixelquesttrade.club/img/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61558175799327",
+        "https://www.twitch.tv/pixelquesttrade",
+        "https://www.youtube.com/@PixelQuestTrade"
+      ]
+    }
+    </script>
 
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">
@@ -20,7 +38,6 @@
 <body>
     <!-- Header Section -->
     <header>
-        <!-- Logo -->
         <img src="img/logo.png" alt="PixelQuest Trade Logo" style="max-width: 150px;">
         <h1>Welcome to PixelQuest Trade</h1>
         <p>Connecting communities through creativity and engagement.</p>
@@ -43,6 +60,7 @@
 
     <!-- Main Content -->
     <main>
+        <!-- Mission Section -->
         <section>
             <h2>Our Mission</h2>
             <p>
@@ -50,22 +68,30 @@
             </p>
         </section>
 
-    <!-- Gallery Section -->
-<section class="gallery" style="padding: 20px; text-align: center;">
-    <div class="gallery-grid" style="display: flex; justify-content: center; gap: 10px;">
-        <img src="img/event1.jpg" alt="Stock Photo 1" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
-        <img src="img/event2.jpg" alt="Stock Photo 2" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
-        <img src="img/event3.jpg" alt="Stock Photo 3" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
-    </div>
-</section>
+        <!-- About the Director Section Placeholder -->
+        <section>
+            <h2>About the Director</h2>
+            <p>
+My name is Alex Sanchez Jr., and I have dedicated the last six years to working in the non-profit sector. My experience spans shelter living, case management, and Information and Referral services. I bring a wealth of knowledge in grant management and organizational operations, as well as proven leadership skills. My goal is to uplift individuals within our community and foster meaningful connections among people. At PixelQuest Trade, I am committed to driving positive change and empowering our community through collaborative and inclusive initiatives.
+            </p>
+        </section>
 
+        <!-- Gallery Section -->
+        <section class="gallery" style="padding: 20px; text-align: center;">
+            <div class="gallery-grid" style="display: flex; justify-content: center; gap: 10px;">
+                <img src="img/event1.jpg" alt="Stock Photo 1" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
+                <img src="img/event2.jpg" alt="Stock Photo 2" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
+                <img src="img/event3.jpg" alt="Stock Photo 3" style="width: 30%; border: 2px solid #ccc; border-radius: 8px;">
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
         <a href="privacy.html" style="display: block; margin-top: 10px;">Privacy Policy</a>
         <a href="terms.html" style="display: block;">Terms of Use</a>
-        
+
         <!-- PayPal Donate Button -->
         <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
             <div id="donate-button"></div>
