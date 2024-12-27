@@ -3,63 +3,64 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2D004D; /* Deep purple background */
-    color: white; /* Default text color */
+    background-color: #2D004D;
+    color: white;
     line-height: 1.6;
-    font-size: 16px; /* Adjust base font size for better readability */
+    font-size: 16px;
 }
 
 /* Header Styling */
 header {
     text-align: center;
-    padding: 1.5rem 0; /* Adjust padding for smaller screens */
+    padding: 1.5rem 0;
     background-color: #1E1E2C;
     color: #00FFFF;
 }
 
 header img {
-    max-width: 150px; /* Reduced size for smaller screens */
+    max-width: 150px;
     height: auto;
     display: block;
     margin: 0 auto 1rem;
 }
 
 header h1 {
-    font-size: 2rem; /* Reduced font size for better scaling */
+    font-size: 2rem;
     margin: 0;
     color: #00FFFF;
     text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
 }
 
 header p {
-    font-size: 1rem; /* Adjusted for better readability on small screens */
+    font-size: 1rem;
     color: #FFF4E0;
 }
 
 /* Navigation Styling */
 nav {
-    background: #005bb5; /* Blue background */
+    background: #005bb5;
     padding: 0.5rem 1rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Wrap items when they don't fit */
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure it spans the full width */
+    width: 100%;
     text-align: center;
 }
 
 nav ul li {
-    margin: 0.5rem 1rem; /* Add spacing between menu items */
+    position: relative;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -73,40 +74,80 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003f7f; /* Darker blue on hover */
-    color: #00FFFF; /* Neon cyan on hover */
+    background-color: #003f7f;
+    color: #00FFFF;
+}
+
+/* Dropdown Menu Styling */
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1E1E2C;
+    padding: 0.5rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10;
+    width: 200px;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    margin: 0;
+    text-align: left;
+}
+
+nav ul li ul.dropdown li a {
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul.dropdown li a:hover {
+    background-color: #005bb5;
+    color: #00FFFF;
 }
 
 /* Responsive Design for Navigation */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
     nav ul {
-        flex-direction: column; /* Ensure menu items stack vertically */
-        width: auto; /* Adjust width to fit content */
+        flex-direction: column;
+        width: auto;
     }
 
     nav ul li {
-        margin: 0.5rem 0; /* Add spacing between vertical menu items */
+        margin: 0.5rem 0;
+    }
+
+    nav ul li ul.dropdown {
+        position: static;
+        width: 100%;
+        text-align: center;
     }
 
     nav ul li a {
-        font-size: 1rem; /* Adjust text size for better readability */
-        width: 100%; /* Make links full-width for easier tapping */
-        text-align: center; /* Center-align the text */
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
     }
-}
-
 }
 
 /* Membership Grid Layout */
 .membership-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for smaller screens */
-    gap: 1.5rem; /* Slightly reduced gap for mobile */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     padding: 1rem;
     text-align: center;
 }
@@ -116,7 +157,7 @@ nav ul li a:hover {
     background: #1E1E2C;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1rem; /* Reduced padding for smaller screens */
+    padding: 1rem;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -126,95 +167,11 @@ nav ul li a:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Membership Title */
-.membership-card h3 {
-    font-size: 1.5rem; /* Adjusted font size */
-    margin-bottom: 0.5rem;
-    color: #FFD700;
-}
-
-/* Price Styling */
-.price {
-    font-size: 1.2rem;
-    color: #00FFFF;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-/* Benefit List */
-.membership-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.membership-card ul li {
-    margin: 0.5rem 0;
-    font-size: 0.9rem; /* Slightly smaller text for benefits */
-    color: #FFF4E0;
-}
-
 /* Footer Styling */
 footer {
     background: #1E1E2C;
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem; /* Smaller font size */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Reduce overall font size on small screens */
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .membership-grid {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
-    }
-
-    .membership-card {
-        padding: 1rem; /* Compact card padding */
-    }
-
-    nav ul li {
-        margin: 0.25rem;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem; /* Slightly smaller text for nav links */
-    }
-}
-
-/* Trailblazer Grid Layout */
-.trailblazer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Compact for mobile */
-    gap: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Trailblazer Cards */
-.trailblazer-card {
-    background: #1E1E2C;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.trailblazer-card h3 {
-    font-size: 1.2rem; /* Adjusted font size */
-    margin-bottom: 0.5rem;
-    color: #FFD700;
-}
-
-.trailblazer-card p {
     font-size: 0.9rem;
-    color: #FFF4E0;
 }
