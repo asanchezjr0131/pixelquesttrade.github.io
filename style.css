@@ -38,22 +38,28 @@ header p {
 
 /* Navigation Styling */
 nav {
-    background: #005bb5;
-    padding: 0.5rem 0;
+    background: #005bb5; /* Blue background */
+    padding: 0.5rem 1rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Ensure navigation wraps on smaller screens */
     justify-content: center;
+    flex-wrap: wrap; /* Wrap items when they don't fit */
     margin: 0;
     padding: 0;
+    width: 100%; /* Ensure it spans the full width */
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0.5rem;
+    margin: 0.5rem 1rem; /* Add spacing between menu items */
 }
 
 nav ul li a {
@@ -67,8 +73,33 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003f7f;
-    color: #00FFFF;
+    background-color: #003f7f; /* Darker blue on hover */
+    color: #00FFFF; /* Neon cyan on hover */
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Ensure menu items stack vertically */
+        width: auto; /* Adjust width to fit content */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Add spacing between vertical menu items */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Adjust text size for better readability */
+        width: 100%; /* Make links full-width for easier tapping */
+        text-align: center; /* Center-align the text */
+    }
+}
+
 }
 
 /* Membership Grid Layout */
