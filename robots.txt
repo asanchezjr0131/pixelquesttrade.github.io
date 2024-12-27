@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://pixelquesttrade.club/sitemap.xml
+Allow: /
+Sitemap: https://www.pixelquesttrade.club/sitemap.xml
