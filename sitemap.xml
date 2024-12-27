@@ -1,51 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>https://www.pixelquesttrade.club/index.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>1.0</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/about.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.8</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/membership.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.8</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/trailblazer.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/activities.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/privacy.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/terms.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://www.pixelquesttrade.club/articles.html</loc>
-  <lastmod>2024-12-26</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.6</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.pixelquesttrade.club/</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/about.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/membership.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/trailblazer.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/activities.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/privacy.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.pixelquesttrade.club/terms.html</loc>
+    <lastmod>2024-12-26</lastmod>
+  </url>
 </urlset>
