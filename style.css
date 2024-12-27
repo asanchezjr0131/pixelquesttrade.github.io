@@ -6,38 +6,39 @@ body {
     background-color: #2D004D; /* Deep purple background */
     color: white; /* Default text color */
     line-height: 1.6;
+    font-size: 16px; /* Adjust base font size for better readability */
 }
 
 /* Header Styling */
 header {
     text-align: center;
-    padding: 2rem 0;
-    background-color: #1E1E2C; /* Slightly darker background for header */
-    color: #00FFFF; /* Neon cyan for text */
+    padding: 1.5rem 0; /* Adjust padding for smaller screens */
+    background-color: #1E1E2C;
+    color: #00FFFF;
 }
 
 header img {
-    max-width: 200px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Reduced size for smaller screens */
+    height: auto;
     display: block;
-    margin: 0 auto 1rem; /* Center and add spacing */
+    margin: 0 auto 1rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Reduced font size for better scaling */
     margin: 0;
-    color: #00FFFF; /* Neon cyan for the title */
-    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Neon glow effect */
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #FFF4E0; /* Soft white for contrast */
+    font-size: 1rem; /* Adjusted for better readability on small screens */
+    color: #FFF4E0;
 }
 
 /* Navigation Styling */
 nav {
-    background: #005bb5; /* Blue background */
+    background: #005bb5;
     padding: 0.5rem 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -45,13 +46,14 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Ensure navigation wraps on smaller screens */
     justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -65,16 +67,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003f7f; /* Darker blue on hover */
-    color: #00FFFF; /* Neon cyan on hover */
+    background-color: #003f7f;
+    color: #00FFFF;
 }
 
 /* Membership Grid Layout */
 .membership-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for smaller screens */
+    gap: 1.5rem; /* Slightly reduced gap for mobile */
+    padding: 1rem;
     text-align: center;
 }
 
@@ -83,7 +85,7 @@ nav ul li a:hover {
     background: #1E1E2C;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
+    padding: 1rem; /* Reduced padding for smaller screens */
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -95,16 +97,16 @@ nav ul li a:hover {
 
 /* Membership Title */
 .membership-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #FFD700; /* Highlighted gold for titles */
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-bottom: 0.5rem;
+    color: #FFD700;
 }
 
 /* Price Styling */
 .price {
-    font-size: 1.5rem;
-    color: #00FFFF; /* Neon cyan */
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #00FFFF;
+    margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
@@ -116,8 +118,8 @@ nav ul li a:hover {
 
 .membership-card ul li {
     margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #FFF4E0; /* Soft white */
+    font-size: 0.9rem; /* Slightly smaller text for benefits */
+    color: #FFF4E0;
 }
 
 /* Footer Styling */
@@ -125,21 +127,43 @@ footer {
     background: #1E1E2C;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce overall font size on small screens */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
     .membership-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+
+    .membership-card {
+        padding: 1rem; /* Compact card padding */
+    }
+
+    nav ul li {
+        margin: 0.25rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Slightly smaller text for nav links */
     }
 }
+
 /* Trailblazer Grid Layout */
 .trailblazer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Compact for mobile */
+    gap: 1.5rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -148,104 +172,18 @@ footer {
     background: #1E1E2C;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
+    padding: 1rem;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.trailblazer-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
 .trailblazer-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Adjusted font size */
     margin-bottom: 0.5rem;
-    color: #FFD700; /* Gold for recognition */
+    color: #FFD700;
 }
 
 .trailblazer-card p {
-    font-size: 1rem;
-    color: #FFF4E0; /* Soft white for readability */
+    font-size: 0.9rem;
+    color: #FFF4E0;
 }
-
-/* Dropdown Menu Styling */
-nav ul {
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    position: relative;
-    margin: 0 1rem;
-}
-
-nav ul li ul.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #1E1E2C;
-    padding: 0.5rem 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-nav ul li:hover ul.dropdown {
-    display: block;
-}
-
-nav ul li ul.dropdown li {
-    margin: 0;
-    text-align: left;
-}
-
-nav ul li ul.dropdown li a {
-    color: white;
-    padding: 0.5rem 1rem;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li ul.dropdown li a:hover {
-    background-color: #005bb5;
-    color: #00FFFF; /* Neon cyan on hover */
-}
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.gallery h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
