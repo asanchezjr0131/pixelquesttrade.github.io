@@ -40,7 +40,6 @@ header p {
 nav {
     background: #005bb5;
     padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,11 +50,9 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 100%;
-    text-align: center;
 }
 
 nav ul li {
@@ -86,10 +83,10 @@ nav ul li ul.dropdown {
     left: 0;
     background-color: #1E1E2C;
     padding: 0.5rem 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     z-index: 10;
-    width: 200px;
+    min-width: 200px;
 }
 
 nav ul li:hover ul.dropdown {
@@ -133,11 +130,9 @@ nav ul li ul.dropdown li a:hover {
     nav ul li ul.dropdown {
         position: static;
         width: 100%;
-        text-align: center;
     }
 
     nav ul li a {
-        font-size: 1rem;
         width: 100%;
         text-align: center;
     }
