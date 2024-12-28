@@ -107,6 +107,29 @@
         </section>
     </main>
 
+       <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
+        <a href="privacy.html" style="display: block; margin-top: 10px;">Privacy Policy</a>
+        <a href="terms.html" style="display: block;">Terms of Use</a>
+
+        <!-- PayPal Donate Button -->
+        <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
+            <div id="donate-button"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production', // 'sandbox' for testing, 'production' for live
+                    hosted_button_id: 'GVWQJP6GJ5NXN',
+                    image: {
+                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                        alt: 'Donate with PayPal button',
+                        title: 'Donate with PayPal',
+                    }
+                }).render('#donate-button');
+            </script>
+        </div>
+    </footer>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -114,14 +137,6 @@
             padding: 0;
             background-color: #2D004D;
             color: white;
-        }
-
-        .artist-container {
-            background-color: rgba(255, 255, 255, 0.1); /* Lighter color for contrast */
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         header {
@@ -148,6 +163,18 @@
             color: #FFF;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00FFFF;
+        }
+
+        .artist-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .carousel {
@@ -193,29 +220,5 @@
 </body>
 </html>
 
-
-       <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
-        <a href="privacy.html" style="display: block; margin-top: 10px;">Privacy Policy</a>
-        <a href="terms.html" style="display: block;">Terms of Use</a>
-
-        <!-- PayPal Donate Button -->
-        <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
-            <div id="donate-button"></div>
-            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-            <script>
-                PayPal.Donation.Button({
-                    env: 'production', // 'sandbox' for testing, 'production' for live
-                    hosted_button_id: 'GVWQJP6GJ5NXN',
-                    image: {
-                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-                        alt: 'Donate with PayPal button',
-                        title: 'Donate with PayPal',
-                    }
-                }).render('#donate-button');
-            </script>
-        </div>
-    </footer>
 </body>
 </html>
