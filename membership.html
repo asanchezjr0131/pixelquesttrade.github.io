@@ -63,100 +63,103 @@
     </div>
 
     <!-- Voyager -->
-    <div class="membership-card">
-        <h3>Voyager</h3>
-        <p class="price">$12 / 3 months</p>
-        <ul>
-            <li>Members-only forums</li>
-            <li>Priority event invitations</li>
-            <li>Exclusive promotions</li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
-        <div id="paypal-button-container-P-0MU375192A726612WM5YDGDI"></div>
-        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal.Buttons({
-              style: {
-                  shape: 'pill',
-                  color: 'white',
-                  layout: 'vertical',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                  plan_id: 'P-0MU375192A726612WM5YDGDI'
-                });
-              },
-              onApprove: function(data, actions) {
-                alert('Subscription successful! ID: ' + data.subscriptionID);
-              }
-          }).render('#paypal-button-container-P-0MU375192A726612WM5YDGDI');
-        </script>
-    </div>
-  <!-- Explorer -->
-    <div class="membership-card">
-        <h3>Explorer</h3>
-        <p class="price">$33 / 3 months</p>
-        <ul>
-            <li>Free virtual events</li>
-            <li>Exclusive digital content</li>
-            <li>Higher-tier promotions</li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
-        <div id="paypal-button-container-P-7T3052369N522261YM5YDH7Y"></div>
-        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal.Buttons({
-              style: {
-                  shape: 'pill',
-                  color: 'white',
-                  layout: 'vertical',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                  plan_id: 'P-7T3052369N522261YM5YDH7Y'
-                });
-              },
-              onApprove: function(data, actions) {
-                alert('Subscription successful! ID: ' + data.subscriptionID);
-              }
-          }).render('#paypal-button-container-P-7T3052369N522261YM5YDH7Y');
-        </script>
-    </div>
+<div class="membership-card">
+    <h3>Voyager</h3>
+    <p class="price">$12 / 3 months</p>
+    <ul>
+        <li>Members-only forums</li>
+        <li>Priority event invitations</li>
+        <li>Exclusive promotions</li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+    <div id="paypal-button-container-voyager"></div>
+</div>
 
-   <!-- Trailblazer -->
-    <div class="membership-card">
-        <h3>Trailblazer</h3>
-        <p class="price">$60 / 3 months</p>
-        <ul>
-            <li>VIP access to events</li>
-            <li>Exclusive promotions</li>
-            <li>Recognition on our platform</li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
-        <div id="paypal-button-container-P-2RD47110SA998061JM5YDLCY"></div>
-        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal.Buttons({
-              style: {
-                  shape: 'pill',
-                  color: 'white',
-                  layout: 'vertical',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
+<!-- Explorer -->
+<div class="membership-card">
+    <h3>Explorer</h3>
+    <p class="price">$33 / 3 months</p>
+    <ul>
+        <li>Free virtual events</li>
+        <li>Exclusive digital content</li>
+        <li>Higher-tier promotions</li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+    <div id="paypal-button-container-explorer"></div>
+</div>
+
+<!-- Trailblazer -->
+<div class="membership-card">
+    <h3>Trailblazer</h3>
+    <p class="price">$60 / 3 months</p>
+    <ul>
+        <li>VIP access to events</li>
+        <li>Exclusive promotions</li>
+        <li>Recognition on our platform</li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+    <div id="paypal-button-container-trailblazer"></div>
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Voyager Button
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'white',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
                 return actions.subscription.create({
-                  plan_id: 'P-2RD47110SA998061JM5YDLCY'
+                    plan_id: 'P-0MU375192A726612WM5YDGDI'
                 });
-              },
-              onApprove: function(data, actions) {
-                alert('Subscription successful! ID: ' + data.subscriptionID);
-              }
-          }).render('#paypal-button-container-P-2RD47110SA998061JM5YDLCY');
-        </script>
-    </div>
-</section>
+            },
+            onApprove: function(data, actions) {
+                alert('Voyager Subscription successful! ID: ' + data.subscriptionID);
+            }
+        }).render('#paypal-button-container-voyager');
+
+        // Explorer Button
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'white',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                    plan_id: 'P-7T3052369N522261YM5YDH7Y'
+                });
+            },
+            onApprove: function(data, actions) {
+                alert('Explorer Subscription successful! ID: ' + data.subscriptionID);
+            }
+        }).render('#paypal-button-container-explorer');
+
+        // Trailblazer Button
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'white',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                    plan_id: 'P-2RD47110SA998061JM5YDLCY'
+                });
+            },
+            onApprove: function(data, actions) {
+                alert('Trailblazer Subscription successful! ID: ' + data.subscriptionID);
+            }
+        }).render('#paypal-button-container-trailblazer');
+    });
+</script>
+
         <!-- Instructions Section -->
         <section>
             <h2>Support Our Mission</h2>
