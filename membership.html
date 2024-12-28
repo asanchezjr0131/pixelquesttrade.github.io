@@ -59,7 +59,7 @@
             <li>Invitations to free events</li>
             <li>Support our mission</li>
         </ul>
-        <a href="register.html?tier=free" class="join-button">Join Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
     </div>
 
     <!-- Voyager -->
@@ -71,7 +71,27 @@
             <li>Priority event invitations</li>
             <li>Exclusive promotions</li>
         </ul>
-        <a href="register.html?tier=voyager" class="join-button">Join Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+        <div id="paypal-button-container-P-0MU375192A726612WM5YDGDI"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  plan_id: 'P-0MU375192A726612WM5YDGDI'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert('Subscription successful! ID: ' + data.subscriptionID);
+              }
+          }).render('#paypal-button-container-P-0MU375192A726612WM5YDGDI');
+        </script>
     </div>
 
     <!-- Explorer -->
@@ -83,7 +103,27 @@
             <li>Exclusive digital content</li>
             <li>Higher-tier promotions</li>
         </ul>
-        <a href="register.html?tier=explorer" class="join-button">Join Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+        <div id="paypal-button-container-P-7T3052369N522261YM5YDH7Y"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  plan_id: 'P-7T3052369N522261YM5YDH7Y'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert('Subscription successful! ID: ' + data.subscriptionID);
+              }
+          }).render('#paypal-button-container-P-7T3052369N522261YM5YDH7Y');
+        </script>
     </div>
 
     <!-- Trailblazer -->
@@ -92,18 +132,43 @@
         <p class="price">$60 / 3 months</p>
         <ul>
             <li>VIP access to events</li>
-            <li>Personalized gifts</li>
+            <li>Exclusive promotions</li>
             <li>Recognition on our platform</li>
         </ul>
-        <a href="register.html?tier=trailblazer" class="join-button">Join Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
+        <div id="paypal-button-container-P-2RD47110SA998061JM5YDLCY"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AQomzt8-TcsP9YczkhfG95fGyGLnAJZKNP_B9efDbZzPaC9ByN5o5ku7GEjGs6cJuEFPMU3RrlryGegk&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'pill',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  plan_id: 'P-2RD47110SA998061JM5YDLCY'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert('Subscription successful! ID: ' + data.subscriptionID);
+              }
+          }).render('#paypal-button-container-P-2RD47110SA998061JM5YDLCY');
+        </script>
     </div>
 </section>
 
-        <!-- Call to Action -->
+        <!-- Instructions Section -->
         <section>
             <h2>Support Our Mission</h2>
             <p>
-                Your membership dues directly support our community engagement initiatives, including events, resources, and charitable projects.
+                To join PixelQuest Trade, please follow these steps:
+                <ol>
+                    <li>Click "Join Now" to fill out the membership form.</li>
+                    <li>Complete your payment using the PayPal button provided for your tier.</li>
+                </ol>
+                Your membership will be activated upon confirmation of your details and payment.
             </p>
         </section>
     </main>
