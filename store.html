@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelBazaar</title>
+    <title>PixelQuest</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>PixelBazaar</h1>
+        <h1>Welcome to PixelQuest</h1>
         <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="membership.html">Membership</a>
+                <li>
+                    <a href="membership.html">Membership</a>
                     <ul class="dropdown">
                         <li><a href="trailblazer.html">Trailblazers</a></li>
                     </ul>
                 </li>
                 <li><a href="activities.html">Activities</a></li>
+                <li><a href="store.html">PixelBazaar</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -27,30 +29,91 @@
 
     <main>
         <section>
-            <h2>Welcome to PixelBazaar</h2>
-            <p>Explore our exclusive marketplace featuring unique offerings from our talented community of artists and vendors. Discover creativity, support local talent, and find one-of-a-kind treasures.</p>
+            <h2>PixelBazaar</h2>
+            <p>Welcome to PixelBazaar, where our community's creativity comes to life! Explore unique offerings from our talented artists and vendors below.</p>
+
             <div class="artist-sections">
-                <!-- Example Artist Section -->
+                <!-- Artist 1: Audio Specialist -->
                 <div class="artist">
-                    <h3>Artist Name</h3>
-                    <p>Short bio or description of the artist goes here. This space highlights their specialties and unique style.</p>
+                    <h3>Soundwave Studio</h3>
+                    <p>Specializing in custom audio tracks, Soundwave Studio creates music and soundscapes for gaming, videos, and more.</p>
                     <div class="store-grid">
-                        <!-- Example Product -->
                         <div class="product">
-                            <img src="images/product1.jpg" alt="Product 1">
-                            <h4>Product Name</h4>
-                            <p>Description of the product goes here.</p>
-                            <p>Price: $10.00</p>
+                            <img src="images/audio1.jpg" alt="Epic Soundtrack">
+                            <h4>Epic Soundtrack</h4>
+                            <p>A cinematic soundtrack perfect for trailers and projects.</p>
+                            <p>Price: $25.00</p>
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                 <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID"><!-- Replace with your PayPal Button ID -->
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_1"><!-- Replace with your PayPal Button ID -->
                                 <input type="submit" value="Buy Now">
                             </form>
                         </div>
-                        <!-- Add more products for this artist as needed -->
+                        <div class="product">
+                            <img src="images/audio2.jpg" alt="Ambient Loops">
+                            <h4>Ambient Loops</h4>
+                            <p>Relaxing ambient loops for meditation or background use.</p>
+                            <p>Price: $15.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_2"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
+                        <div class="product">
+                            <img src="images/audio3.jpg" alt="Game Effects Pack">
+                            <h4>Game Effects Pack</h4>
+                            <p>A pack of sound effects tailored for game developers.</p>
+                            <p>Price: $30.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_3"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more artist sections as needed -->
+
+                <!-- Artist 2: Physical Goods Specialist -->
+                <div class="artist">
+                    <h3>Crafted Creations</h3>
+                    <p>Offering handmade goods, Crafted Creations features unique, high-quality items perfect for gifting or personal use.</p>
+                    <div class="store-grid">
+                        <div class="product">
+                            <img src="images/craft1.jpg" alt="Handcrafted Mug">
+                            <h4>Handcrafted Mug</h4>
+                            <p>A beautifully crafted ceramic mug for coffee lovers.</p>
+                            <p>Price: $20.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_4"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
+                        <div class="product">
+                            <img src="images/craft2.jpg" alt="Custom Notebook">
+                            <h4>Custom Notebook</h4>
+                            <p>A handmade notebook with customizable covers and pages.</p>
+                            <p>Price: $15.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_5"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
+                        <div class="product">
+                            <img src="images/craft3.jpg" alt="Decorative Vase">
+                            <h4>Decorative Vase</h4>
+                            <p>A unique vase with intricate designs for home decor.</p>
+                            <p>Price: $35.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="PAYPAL_ID_6"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -141,12 +204,28 @@
             border-radius: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+       <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
+        <a href="privacy.html" style="display: block; margin-top: 10px;">Privacy Policy</a>
+        <a href="terms.html" style="display: block;">Terms of Use</a>
+
+        <!-- PayPal Donate Button -->
+        <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
+            <div id="donate-button"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production', // 'sandbox' for testing, 'production' for live
+                    hosted_button_id: 'GVWQJP6GJ5NXN',
+                    image: {
+                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                        alt: 'Donate with PayPal button',
+                        title: 'Donate with PayPal',
+                    }
+                }).render('#donate-button');
+            </script>
+        </div>
+    </footer>
 </body>
 </html>
