@@ -3,20 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities | PixelQuest Trade</title>
-    <link rel="stylesheet" href="style.css">
-    <meta property="og:title" content="PixelQuest Trade">
-    <meta property="og:description" content="Join PixelQuest Trade, a 501(c)(7) club dedicated to community engagement and digital inclusion.">
+    <title>Activities | PixelQuest Trade (PQT)</title>
+
+    <!-- SEO Metadata -->
+    <meta name="description" content="Engage with PixelQuest Trade (PQT) through exciting activities, live streams, and community-driven events on Twitch, YouTube, and Facebook.">
+    <meta name="keywords" content="PixelQuest Trade, PQT Activities, Twitch streams, YouTube channel, Facebook updates, Pixel Quest, community events, 501(c)(7) club">
+    <meta name="author" content="PixelQuest Trade">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Activities | PixelQuest Trade (PQT)">
+    <meta property="og:description" content="Join PixelQuest Trade (PQT) for engaging community activities, live streams on Twitch, YouTube, and Facebook.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pixelquesttrade.github.io">
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:url" content="https://www.pixelquesttrade.club/activities">
+    <meta property="og:image" content="https://www.pixelquesttrade.club/img/logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Activities | PixelQuest Trade",
+        "description": "Discover activities and live streams from PixelQuest Trade on Twitch, YouTube, and Facebook. Stay connected and participate in community-driven events.",
+        "url": "https://www.pixelquesttrade.club/activities",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PixelQuest Trade",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.pixelquesttrade.club/img/logo.png"
+            }
+        }
+    }
+    </script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <img src="img/logo.png" alt="PixelQuest Trade Logo">
+        <img src="img/logo.png" alt="PixelQuest Trade Logo" style="max-width: 150px;">
         <h1>Our Activities</h1>
-        <p>Discover, Connect, and Engage with PixelQuest Trade</p>
+        <p>Discover, Connect, and Engage with PixelQuest Trade (PQT).</p>
     </header>
 
     <!-- Navigation Bar -->
@@ -37,38 +65,35 @@
 
     <!-- Main Content -->
     <main>
+        <!-- Twitch Section -->
         <section>
             <h2>Engage with Us on Twitch</h2>
             <p>
-                Tune into our live streams on Twitch to connect with our community, enjoy exclusive content,
-                and participate in interactive events. We stream live simultaneously on <strong>YouTube</strong>, 
-                <strong>Facebook</strong>, and <strong>Twitch</strong>. If you're watching us on Twitch, you can also
-                find us on the other platforms. Click below to access your preferred streaming service:
+                Tune into our live streams on Twitch to connect with the community, enjoy exclusive content, and participate in interactive events.
+                We also stream simultaneously on <strong>YouTube</strong> and <strong>Facebook</strong>. Choose your favorite platform below:
             </p>
             <ul>
                 <li><a href="https://www.youtube.com/channel/UC7RdiQLtOQKReW4j_YIAJyg" target="_blank">YouTube</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61558175799327" target="_blank">Facebook</a></li>
                 <li><a href="https://www.twitch.tv/pixelquesttrade" target="_blank">Twitch</a></li>
             </ul>
-            <!-- Add a placeholder for the Twitch embed -->
+            <!-- Twitch Embed -->
             <div id="twitch-embed" style="height: 480px; width: 100%;"></div>
-            <!-- Load the Twitch embed script -->
             <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-            <!-- Create a Twitch.Player object -->
             <script type="text/javascript">
                 new Twitch.Player("twitch-embed", {
                     channel: "pixelquesttrade",
                     width: "100%",
                     height: "480",
-                    parent: ["pixelquesttrade.github.io", "www.pixelquesttrade.org"]
+                    parent: ["pixelquesttrade.github.io", "www.pixelquesttrade.club"]
                 });
             </script>
         </section>
 
+        <!-- Facebook Section -->
         <section>
             <h2>Follow Us on Facebook</h2>
             <p>Stay updated with our latest news and activities on Facebook!</p>
-            <!-- Facebook Page Plugin -->
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" 
                 src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0">
@@ -85,10 +110,10 @@
             </div>
         </section>
 
+        <!-- YouTube Section -->
         <section>
             <h2>Watch Us on YouTube</h2>
             <p>Catch all our latest videos and live streams on YouTube!</p>
-            <!-- YouTube Embed -->
             <div style="text-align: center;">
                 <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/live_stream?channel=UC7RdiQLtOQKReW4j_YIAJyg" 
@@ -100,11 +125,11 @@
             </div>
         </section>
 
+        <!-- Upcoming Activities Section -->
         <section>
             <h2>Upcoming Activities</h2>
             <p>
-                Stay tuned for updates on our virtual events, community showcases, and more. 
-                Check back regularly for our schedule!
+                Stay tuned for updates on virtual events, community showcases, and much more. Check back often for our schedule!
             </p>
         </section>
     </main>
@@ -114,19 +139,19 @@
         <p>&copy; 2024 PixelQuest Trade. All Rights Reserved. Registered 501(c)(7). EIN 99-2230831</p>
         <a href="privacy.html" style="display: block; margin-top: 10px;">Privacy Policy</a>
         <a href="terms.html" style="display: block;">Terms of Use</a>
-        
+
         <!-- PayPal Donate Button -->
         <div id="donate-button-container" style="text-align: center; margin-top: 10px;">
             <div id="donate-button"></div>
             <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
             <script>
                 PayPal.Donation.Button({
-                    env: 'production', // 'sandbox' for testing, 'production' for live
+                    env: 'production',
                     hosted_button_id: 'GVWQJP6GJ5NXN',
                     image: {
                         src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
                         alt: 'Donate with PayPal button',
-                        title: 'Donate with PayPal',
+                        title: 'Donate with PayPal'
                     }
                 }).render('#donate-button');
             </script>
