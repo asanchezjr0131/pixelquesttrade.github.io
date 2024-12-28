@@ -1,5 +1,9 @@
 https://www.pixelquesttrade.club/
 https://www.pixelquesttrade.club/about.html
-https://www.pixelquesttrade.club/membership.html
-https://www.pixelquesttrade.club/trailblazer.html
 https://www.pixelquesttrade.club/activities.html
+https://www.pixelquesttrade.club/contact.html
+https://www.pixelquesttrade.club/membership.html
+https://www.pixelquesttrade.club/privacy.html
+https://www.pixelquesttrade.club/terms.html
+https://www.pixelquesttrade.club/trailblazer.html
+https://www.pixelquesttrade.club/thank you.html
