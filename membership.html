@@ -62,7 +62,7 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScJBg3I2d3AF-H60xW4xnEN1xopT1PZkIfqGc18UruGz4Huzw/viewform" target="_blank" class="join-button">Join Now</a>
     </div>
 
-     <!-- Voyager -->
+    <!-- Voyager -->
     <div class="membership-card">
         <h3>Voyager</h3>
         <p class="price">$12 / 3 months</p>
@@ -88,12 +88,11 @@
                 });
               },
               onApprove: function(data, actions) {
-                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                alert('Subscription successful! ID: ' + data.subscriptionID); // Optional success message for the subscriber
               }
           }).render('#paypal-button-container-P-0MU375192A726612WM5YDGDI'); // Renders the PayPal button
         </script>
     </div>
-
     <!-- Explorer -->
     <div class="membership-card">
         <h3>Explorer</h3>
