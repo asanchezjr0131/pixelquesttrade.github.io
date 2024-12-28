@@ -37,8 +37,8 @@
                 <div class="artist">
                     <h3>Soundwave Studio</h3>
                     <p>Specializing in custom audio tracks, Soundwave Studio creates music and soundscapes for gaming, videos, and more.</p>
-                    <div class="store-grid">
-                        <div class="product">
+                    <div class="carousel" id="carousel-audio">
+                        <div class="carousel-item">
                             <img src="images/audio1.jpg" alt="Epic Soundtrack">
                             <h4>Epic Soundtrack</h4>
                             <p>A cinematic soundtrack perfect for trailers and projects.</p>
@@ -49,7 +49,7 @@
                                 <input type="submit" value="Buy Now">
                             </form>
                         </div>
-                        <div class="product">
+                        <div class="carousel-item">
                             <img src="images/audio2.jpg" alt="Ambient Loops">
                             <h4>Ambient Loops</h4>
                             <p>Relaxing ambient loops for meditation or background use.</p>
@@ -60,7 +60,7 @@
                                 <input type="submit" value="Buy Now">
                             </form>
                         </div>
-                        <div class="product">
+                        <div class="carousel-item">
                             <img src="images/audio3.jpg" alt="Game Effects Pack">
                             <h4>Game Effects Pack</h4>
                             <p>A pack of sound effects tailored for game developers.</p>
@@ -78,8 +78,8 @@
                 <div class="artist">
                     <h3>Crafted Creations</h3>
                     <p>Offering handmade goods, Crafted Creations features unique, high-quality items perfect for gifting or personal use.</p>
-                    <div class="store-grid">
-                        <div class="product">
+                    <div class="carousel" id="carousel-crafts">
+                        <div class="carousel-item">
                             <img src="images/craft1.jpg" alt="Handcrafted Mug">
                             <h4>Handcrafted Mug</h4>
                             <p>A beautifully crafted ceramic mug for coffee lovers.</p>
@@ -90,7 +90,7 @@
                                 <input type="submit" value="Buy Now">
                             </form>
                         </div>
-                        <div class="product">
+                        <div class="carousel-item">
                             <img src="images/craft2.jpg" alt="Custom Notebook">
                             <h4>Custom Notebook</h4>
                             <p>A handmade notebook with customizable covers and pages.</p>
@@ -101,7 +101,7 @@
                                 <input type="submit" value="Buy Now">
                             </form>
                         </div>
-                        <div class="product">
+                        <div class="carousel-item">
                             <img src="images/craft3.jpg" alt="Decorative Vase">
                             <h4>Decorative Vase</h4>
                             <p>A unique vase with intricate designs for home decor.</p>
@@ -122,87 +122,33 @@
         <p>&copy; 2024 PixelQuest Trade. All rights reserved.</p>
     </footer>
 
-    <!-- Add some styles directly for learning -->
+    <!-- Add some styles and scripts for carousel functionality -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
             position: relative;
         }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+        .carousel-item {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
         }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            background-color: #444;
-            padding: 10px;
-            list-style: none;
-            top: 100%;
-            left: 0;
-        }
-
-        nav ul li:hover .dropdown {
-            display: block;
-        }
-
-        .dropdown li {
-            margin: 5px 0;
-        }
-
-        .dropdown li a {
-            color: white;
-        }
-
-        .artist-sections {
-            padding: 20px;
-        }
-
-        .artist {
-            margin-bottom: 40px;
-        }
-
-        .store-grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .product {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-            width: 200px;
-        }
-
-        .product img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
+    </style>
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            let currentIndex = 0;
+            const items = carousel.querySelectorAll('.carousel-item');
+            setInterval(() => {
+                items.forEach((item, index) => {
+                    item.style.transform = `translateX(-${currentIndex * 100}%)`;
+                });
+                currentIndex = (currentIndex + 1) % items.length;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
 
        <!-- Footer Section -->
     <footer>
