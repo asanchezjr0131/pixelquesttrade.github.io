@@ -79,7 +79,7 @@
               style: {
                   shape: 'pill',
                   color: 'white',
-                  layout: 'horizontal',
+                  layout: 'vertical',
                   label: 'subscribe'
               },
               createSubscription: function(data, actions) {
@@ -88,12 +88,12 @@
                 });
               },
               onApprove: function(data, actions) {
-                alert('Subscription successful! ID: ' + data.subscriptionID); // Optional success message for the subscriber
+                alert('Subscription successful! ID: ' + data.subscriptionID);
               }
           }).render('#paypal-button-container-P-0MU375192A726612WM5YDGDI'); // Renders the PayPal button
         </script>
     </div>
-   <!-- Explorer -->
+  <!-- Explorer -->
     <div class="membership-card">
         <h3>Explorer</h3>
         <p class="price">$33 / 3 months</p>
@@ -110,7 +110,7 @@
               style: {
                   shape: 'pill',
                   color: 'white',
-                  layout: 'horizontal',
+                  layout: 'vertical',
                   label: 'subscribe'
               },
               createSubscription: function(data, actions) {
@@ -119,13 +119,13 @@
                 });
               },
               onApprove: function(data, actions) {
-                alert('Subscription successful! ID: ' + data.subscriptionID); // Optional success message for the subscriber
+                alert('Subscription successful! ID: ' + data.subscriptionID);
               }
           }).render('#paypal-button-container-P-7T3052369N522261YM5YDH7Y'); // Renders the PayPal button
         </script>
     </div>
 
-    <!-- Trailblazer -->
+   <!-- Trailblazer -->
     <div class="membership-card">
         <h3>Trailblazer</h3>
         <p class="price">$60 / 3 months</p>
@@ -141,7 +141,7 @@
           paypal.Buttons({
               style: {
                   shape: 'pill',
-                  color: 'gold',
+                  color: 'white',
                   layout: 'vertical',
                   label: 'subscribe'
               },
@@ -153,11 +153,10 @@
               onApprove: function(data, actions) {
                 alert('Subscription successful! ID: ' + data.subscriptionID);
               }
-          }).render('#paypal-button-container-P-2RD47110SA998061JM5YDLCY');
+          }).render('#paypal-button-container-P-2RD47110SA998061JM5YDLCY'); // Renders the PayPal button
         </script>
     </div>
 </section>
-
         <!-- Instructions Section -->
         <section>
             <h2>Support Our Mission</h2>
