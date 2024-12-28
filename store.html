@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelBazaar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>PixelBazaar</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a>
+                    <ul class="dropdown">
+                        <li><a href="trailblazer.html">Trailblazers</a></li>
+                    </ul>
+                </li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to PixelBazaar</h2>
+            <p>Explore our exclusive marketplace featuring unique offerings from our talented community of artists and vendors. Discover creativity, support local talent, and find one-of-a-kind treasures.</p>
+            <div class="artist-sections">
+                <!-- Example Artist Section -->
+                <div class="artist">
+                    <h3>Artist Name</h3>
+                    <p>Short bio or description of the artist goes here. This space highlights their specialties and unique style.</p>
+                    <div class="store-grid">
+                        <!-- Example Product -->
+                        <div class="product">
+                            <img src="images/product1.jpg" alt="Product 1">
+                            <h4>Product Name</h4>
+                            <p>Description of the product goes here.</p>
+                            <p>Price: $10.00</p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID"><!-- Replace with your PayPal Button ID -->
+                                <input type="submit" value="Buy Now">
+                            </form>
+                        </div>
+                        <!-- Add more products for this artist as needed -->
+                    </div>
+                </div>
+                <!-- Add more artist sections as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PixelQuest Trade. All rights reserved.</p>
+    </footer>
+
+    <!-- Add some styles directly for learning -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            padding: 10px;
+            list-style: none;
+            top: 100%;
+            left: 0;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li {
+            margin: 5px 0;
+        }
+
+        .dropdown li a {
+            color: white;
+        }
+
+        .artist-sections {
+            padding: 20px;
+        }
+
+        .artist {
+            margin-bottom: 40px;
+        }
+
+        .store-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</body>
+</html>
