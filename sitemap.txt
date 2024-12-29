@@ -1,9 +1,9 @@
-https://www.pixelquesttrade.club/
-https://www.pixelquesttrade.club/about.html
-https://www.pixelquesttrade.club/activities.html
-https://www.pixelquesttrade.club/contact.html
-https://www.pixelquesttrade.club/membership.html
-https://www.pixelquesttrade.club/privacy.html
-https://www.pixelquesttrade.club/terms.html
-https://www.pixelquesttrade.club/trailblazer.html
-https://www.pixelquesttrade.club/thank you.html
+https://www.pixelquesttrade.club/                  <-- Home page
+https://www.pixelquesttrade.club/about.html        <-- About Us
+https://www.pixelquesttrade.club/activities.html   <-- Activities
+https://www.pixelquesttrade.club/contact.html      <-- Contact
+https://www.pixelquesttrade.club/membership.html   <-- Membership
+https://www.pixelquesttrade.club/privacy.html      <-- Privacy Policy
+https://www.pixelquesttrade.club/terms.html        <-- Terms of Use
+https://www.pixelquesttrade.club/trailblazer.html  <-- Trailblazers
+https://www.pixelquesttrade.club/thankyou.html     <-- Thank You
