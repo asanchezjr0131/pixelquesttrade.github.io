@@ -6,4 +6,7 @@ https://www.pixelquesttrade.club/membership.html   <-- Membership
 https://www.pixelquesttrade.club/privacy.html      <-- Privacy Policy
 https://www.pixelquesttrade.club/terms.html        <-- Terms of Use
 https://www.pixelquesttrade.club/trailblazer.html  <-- Trailblazers
-https://www.pixelquesttrade.club/thankyou.html     <-- Thank You
+https://www.pixelquesttrade.club/store.html        <-- Store
+https://www.pixelquesttrade.club/thank%20you.html  <-- Thank You
+https://www.pixelquesttrade.club/robots.txt        <-- Robots instructions
+https://www.pixelquesttrade.club/sitemap.txt       <-- Sitemap file
