@@ -224,59 +224,50 @@ function moveCarousel(direction, carouselId) {
     track.style.transform = `translateX(${newTransform}px)`;
 }
 
-    .carousel {
+   .product-gallery {
     display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Ensures the carousel takes up the parent container's width */
-    margin: 0 auto; /* Center the carousel */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
+.product-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    width: 300px; /* Set a fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center; /* Centers the content within each carousel item */
-    padding: 10px;
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-item img {
+.product-card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.carousel .prev,
-.carousel .next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    z-index: 10;
+.product-card h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #FFF4E0;
 }
 
-.carousel .prev {
-    left: 10px;
+.product-card p {
+    color: #DDD;
+    font-size: 1rem;
+    margin: 5px 0;
 }
 
-.carousel .next {
-    right: 10px;
+.product-card button {
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
 }
-
-.carousel .prev:hover,
-.carousel .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
