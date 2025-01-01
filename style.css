@@ -200,36 +200,15 @@ ul li a:hover {
     color: #FFD700; /* Gold on hover */
     text-decoration: underline; /* Underline on hover */
 
-function moveCarousel(direction, carouselId) {
-    const carousel = document.getElementById(carouselId);
-    const track = carousel.querySelector('.carousel-track');
-    const items = track.querySelectorAll('.carousel-item');
-    const itemWidth = items[0].offsetWidth;
-    const totalItems = items.length;
 
-    // Get the current transform position
-    const currentTransform = parseFloat(getComputedStyle(track).transform.split(',')[4]) || 0;
-
-    // Calculate new position
-    let newTransform = currentTransform + direction * -itemWidth;
-
-    // Boundary checks
-    if (newTransform > 0) {
-        newTransform = 0; // Don't scroll past the first item
-    } else if (newTransform < -(itemWidth * (totalItems - 1))) {
-        newTransform = -(itemWidth * (totalItems - 1)); // Don't scroll past the last item
-    }
-
-    // Apply the new transform
-    track.style.transform = `translateX(${newTransform}px)`;
-}
-
-   .product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  /* Product Gallery */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Fit as many as possible in a row */
+    gap: 15px; /* Space between items */
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the gallery on the page */
 }
 
 .product-card {
@@ -237,8 +216,7 @@ function moveCarousel(direction, carouselId) {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 15px;
-    width: 300px; /* Set a fixed width for consistency */
+    padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -248,26 +226,27 @@ function moveCarousel(direction, carouselId) {
 }
 
 .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    max-width: 100%; /* Constrain image width */
+    height: 100px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images fit neatly within the height */
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .product-card h4 {
-    margin: 10px 0 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #FFF4E0;
+    margin: 5px 0;
 }
 
 .product-card p {
     color: #DDD;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 5px 0;
 }
 
 .product-card button {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 5px;
 }
