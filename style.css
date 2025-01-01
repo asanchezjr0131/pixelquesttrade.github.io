@@ -7,8 +7,10 @@ body {
     color: white;
     line-height: 1.6;
     font-size: 16px;
-    border: 8px solid #FFD700; /* Add a bright gold border around the page */
-    box-shadow: 0 
+    border: 5px solid #9b59b6; /* Neon purple border */
+    box-shadow: 0 0 15px #9b59b6, 0 0 30px #8e44ad; /* Subtle glow effect */
+    border-radius: 10px; /* Rounded edges for a softer look */
+}
 
 /* Header Styling */
 header {
