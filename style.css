@@ -200,7 +200,31 @@ ul li a:hover {
     color: #FFD700; /* Gold on hover */
     text-decoration: underline; /* Underline on hover */
 
-  .carousel {
+function moveCarousel(direction, carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const track = carousel.querySelector('.carousel-track');
+    const items = track.querySelectorAll('.carousel-item');
+    const itemWidth = items[0].offsetWidth;
+    const totalItems = items.length;
+
+    // Get the current transform position
+    const currentTransform = parseFloat(getComputedStyle(track).transform.split(',')[4]) || 0;
+
+    // Calculate new position
+    let newTransform = currentTransform + direction * -itemWidth;
+
+    // Boundary checks
+    if (newTransform > 0) {
+        newTransform = 0; // Don't scroll past the first item
+    } else if (newTransform < -(itemWidth * (totalItems - 1))) {
+        newTransform = -(itemWidth * (totalItems - 1)); // Don't scroll past the last item
+    }
+
+    // Apply the new transform
+    track.style.transform = `translateX(${newTransform}px)`;
+}
+
+    .carousel {
     display: flex;
     align-items: center;
     position: relative;
