@@ -43,32 +43,29 @@
                             <a href="clientpaulsanchez/paulsanchezbio.html" style="color: #00FFFF; text-decoration: none; font-weight: bold;">Learn more about Paul</a>
                         </p>
                         <div class="carousel" id="carousel-artist-paul">
-                            <button class="prev" onclick="moveCarousel(-1, 'carousel-artist-paul')">&#10094;</button>
-                            <div class="carousel-track" style="display: flex; gap: 10px; transform: translateX(0);">
-                                <div class="carousel-item" style="flex: 0 0 100%; text-align: center;">
-                                    <img src="clientpaulsanchez/paulsanchezdumpster.jpeg" alt="Dumpster Miniature" style="max-width: 300px; height: auto; border-radius: 8px;">
-                                    <h4>Dumpster Miniature</h4>
-                                    <p>Graffiti-inspired dumpster replica, handcrafted with intricate detail.</p>
-                                    <p>Price: $30.00</p>
-                                    <button disabled style="background-color: gray; color: white; border: none; padding: 10px; cursor: not-allowed;">
-                                        Buy Now (Coming Soon)
-                                    </button>
-                                </div>
-                                <div class="carousel-item" style="flex: 0 0 100%; text-align: center;">
-                                    <img src="clientpaulsanchez/paulsancheztruckreplica.jpeg" alt="Truck Replica" style="max-width: 300px; height: auto; border-radius: 8px;">
-                                    <h4>Truck Replica</h4>
-                                    <p>Detailed graffiti-style truck replica, capturing urban artistry.</p>
-                                    <p>Price: $40.00</p>
-                                    <button disabled style="background-color: gray; color: white; border: none; padding: 10px; cursor: not-allowed;">
-                                        Buy Now (Coming Soon)
-                                    </button>
-                                </div>
-                            </div>
-                            <button class="next" onclick="moveCarousel(1, 'carousel-artist-paul')">&#10095;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <button class="prev" onclick="moveCarousel(-1, 'carousel-artist-paul')">&#10094;</button>
+    <div class="carousel-track" style="display: flex; transition: transform 0.5s ease-in-out;">
+        <div class="carousel-item">
+            <img src="clientpaulsanchez/paulsanchezdumpster.jpeg" alt="Dumpster Miniature" style="max-width: 100%; height: auto; border-radius: 8px;">
+            <h4>Dumpster Miniature</h4>
+            <p>Graffiti-inspired dumpster replica, handcrafted with intricate detail.</p>
+            <p>Price: $30.00</p>
+            <button disabled style="background-color: gray; color: white; border: none; padding: 10px; cursor: not-allowed;">
+                Buy Now (Coming Soon)
+            </button>
+        </div>
+        <div class="carousel-item">
+            <img src="clientpaulsanchez/paulsancheztruckreplica.jpeg" alt="Truck Replica" style="max-width: 100%; height: auto; border-radius: 8px;">
+            <h4>Truck Replica</h4>
+            <p>Detailed graffiti-style truck replica, capturing urban artistry.</p>
+            <p>Price: $40.00</p>
+            <button disabled style="background-color: gray; color: white; border: none; padding: 10px; cursor: not-allowed;">
+                Buy Now (Coming Soon)
+            </button>
+        </div>
+    </div>
+    <button class="next" onclick="moveCarousel(1, 'carousel-artist-paul')">&#10095;</button>
+</div>
         </section>
     </main>
                 <!-- Placeholder for Example Artist 2 -->
