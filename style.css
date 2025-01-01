@@ -199,3 +199,60 @@ ul li a {
 ul li a:hover {
     color: #FFD700; /* Gold on hover */
     text-decoration: underline; /* Underline on hover */
+
+    .carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensures the carousel takes up the parent container's width */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Centers the content within each carousel item */
+    padding: 10px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel .prev,
+.carousel .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel .prev:hover,
+.carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
