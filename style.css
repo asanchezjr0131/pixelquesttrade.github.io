@@ -200,7 +200,7 @@ ul li a:hover {
     color: #FFD700; /* Gold on hover */
     text-decoration: underline; /* Underline on hover */
 
-    .carousel {
+  .carousel {
     display: flex;
     align-items: center;
     position: relative;
