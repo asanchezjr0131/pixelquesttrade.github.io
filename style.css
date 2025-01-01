@@ -7,7 +7,8 @@ body {
     color: white;
     line-height: 1.6;
     font-size: 16px;
-}
+    border: 8px solid #FFD700; /* Add a bright gold border around the page */
+    box-shadow: 0 
 
 /* Header Styling */
 header {
@@ -203,13 +204,12 @@ ul li a:hover {
 
 /* Product Gallery Styling */
 .product-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
-    justify-content: center; /* Center-align items */
-    gap: 20px; /* Space between cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Add space between cards */
     padding: 20px;
     max-width: 1200px; /* Limit the gallery width */
-    margin: 0 auto; /* Center the gallery container */
+    margin: 0 auto; /* Center the gallery */
 }
 
 /* Product Card Styling */
@@ -219,8 +219,6 @@ ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 15px;
-    width: 250px; /* Fixed card width */
-    height: auto; /* Allow height to adjust based on content */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -231,7 +229,7 @@ ul li a:hover {
 
 .product-card img {
     max-width: 100%; /* Ensure the image fits within the card */
-    height: 150px; /* Fixed height for consistency */
+    height: auto; /* Let the height adjust naturally */
     object-fit: cover; /* Crop image if needed to maintain aspect ratio */
     border-radius: 5px;
     margin-bottom: 10px;
