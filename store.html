@@ -133,84 +133,29 @@
             background-color: #2D004D;
             color: white;
         }
+<script>
+    function moveCarousel(direction, carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const track = carousel.querySelector('.carousel-track');
+        const items = track.querySelectorAll('.carousel-item');
+        const itemWidth = items[0].offsetWidth;
+        const currentTransform = parseFloat(getComputedStyle(track).transform.split(',')[4]) || 0;
 
-        header {
-            text-align: center;
-            padding: 1.5rem 0;
-            background-color: #1E1E2C;
-            color: #00FFFF;
+        // Calculate the new position
+        let newTransform = currentTransform + direction * -itemWidth;
+
+        // Boundary check
+        const maxTransform = -itemWidth * (items.length - 1);
+        if (newTransform > 0) {
+            newTransform = 0; // Prevent scrolling beyond the first item
+        } else if (newTransform < maxTransform) {
+            newTransform = maxTransform; // Prevent scrolling beyond the last item
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: transparent; /* Removed black box */
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: #FFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #00FFFF;
-        }
-
-        .artist-container {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .carousel {
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carousel-track {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-        }
-
-        .prev, .next {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        footer {
-            background-color: #1E1E2C;
-            padding: 1rem;
-            text-align: center;
-        }
-    </style>
+        // Apply the new transform
+        track.style.transform = `translateX(${newTransform}px)`;
+    }
+</script>
 </body>
 </html>
+      
